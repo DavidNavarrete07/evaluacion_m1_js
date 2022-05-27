@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3022/3022932.png">
+    <title>Chillán - Turismo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="d-none d-md-block bg-grad py-4">
+        <div class="d-flex justify-content-end">
+            <a href="mailto:contacto@chillanturismo.cl" class="d-none d-sm-block header-links text-white mx-1"> <i
+                    class="bi bi-envelope"></i> contacto@chillanturismo.cl</a>
+            <a href="https://es-la.facebook.com/chillan.activo/" class="d-none d-sm-block header-links text-white mx-1"> <i
+                    class="bi bi-facebook"></i> Facebook</a>
+        </div>
+    </header>
+    <!-- Seccion navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-grad py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-uppercase fw-bold" href="index.html"><img src="https://www.municipalidadchillan.cl/sitio/img/logo.png" alt="Logo Municipalidad Chillán" height="100px"></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-white">
+                    <li class="nav-item">
+                        <a class="fw-bold m-1 nav-link active" aria-current="page" href="index.html"> <i
+                                class="bi bi-house"></i> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold m-1 nav-link" href="#section-history"> <i class="bi bi-clock-history"></i>
+                            Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold m-1 nav-link" href="news.html"> <i class="bi bi-newspaper"></i> Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="fw-bold m-1 nav-link" href="#contact"> <i class="bi bi-telephone"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin seccion navbar -->
+    <!-- Seccion Principal -->
+    <section class="main">
+        <!-- Carousel -->
+        <article id="section-carousel">
+            <div class="container-fluid p-0 m-0">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.municipalidadchillan.cl/sitio/img/localidades/catedral/catedral-max1.jpg"
+                                class="d-block w-100 img-fluid" alt="Catedral de Chillán">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="text-uppercase">Catedral de Chillán</h3>
+                                <p class="badge text-bg-dark text-white shadow">Arauco 505, Chillan, Chillán, Ñuble</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.municipalidadchillan.cl/sitio/img/localidades/mercado/mercado-max1.jpg"
+                                class="d-block w-100 img-fluid" alt="Feria artesanal de Chillán">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="text-uppercase">Feria Artesanal de Chillán</h3>
+                                <p class="badge text-bg-dark text-white shadow">5 de Abril 815, Chillan, Chillán, Ñuble
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://youimg1.tripcdn.com/target/0ww06120008y8tcdf7682.jpg?proc=source%2Ftrip"
+                                class="d-block w-100 img-fluid" alt="Parque Monumental Bernardo O'Higgins">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Parque Monumental Bernardo O'Higgins</h3>
+                                <p class="badge text-bg-dark text-white shadow">Av. O'Higgins 2598, Chillan, Chillán
+                                    Viejo, Región del Bío Bío</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="bi bi-arrow-left-circle text-white" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="bi bi-arrow-right-circle text-white" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <!-- Fin Carousel -->
+        <!-- Historia -->
+        <article data-aos="fade-up" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" id="section-history">
+            <h2 class="text-uppercase text-center pt-2">Historia</h2>
+            <hr class="title-line">
+            <div class="container-fluid mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-8 offset-md-3">
+                        <ul class="timeline">
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Primera fundación</h5>
+                                <p class="fw-bold">1576</p>
+                                <p class="fst-italic">En 1576 la creación del Fuerte de San Ildefonso, a orillas del Río
+                                    Chillán destinado
+                                    a proteger el camino entre Santiago de Chile a Concepción, fue el núcleo generador
+                                    de la ciudad ordenado por Rodrigo de Quiroga, quien en 1578 encargó a su yerno
+                                    Martín Ruiz de Gamboa la creación de una ciudad a 20 leguas de Concepción.
+                                    Martin llegó en 1579 mientras que al año siguiente falleció su suegro, ese mismo año
+                                    Martín Ruiz de Gamboa reorganiza el fuerte llamándolo Fuerte de San Bartolomé de
+                                    Chillán, cuya misión sería proteger las tierras que comenzaban a cultivarse y que
+                                    abastecían a Concepción.</p>
+                            </li>
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Abandono de la ciudad</h5>
+                                <p class="fw-bold">1600</p>
+                                <p class="fst-italic">En 1600 surge un asalto y destrucción de la ciudad por parte de
+                                    los indígenas comandados por Paillamacu. El gobernador Alonso de Ribera crea el
+                                    Fuerte de San Pedro de Ñuble, ubicado en la orilla del río homónimo. A este se
+                                    sumaba el Fuerte de Quinchamalí en la confluencia de los ríos Itata y Ñuble y el
+                                    Fuerte de Santa Ana ubicado Itata abajo, creando así una red de fuertes en la
+                                    zona. Pocos años después nacería en la ciudad el escritor y militar chileno
+                                    Francisco Núñez de Pineda y Bascuñán, autor del libro Cautiverio feliz.
+                                </p>
+                                <p class="fst-italic">La multitud emigró con destino a Santiago, sin embargo, esta se
+                                    detuvo a orillas del Río Maule, por petición de la Real Audiencia de Santiago y el
+                                    Cabildo, hasta agosto de 1663 cuando Angel de Peredo encargó a Juan de las Ruelas
+                                    Millán la reconstrucción de San Bartolomé de Gamboa, trabajos que iniciaron el 1 de
+                                    octubre de 1663, día del Santo Ángel de la Guarda, en el mismo sector donde estaba
+                                    emplazada anteriormente. A fines de aquel año ya estaba edificada gran parte de
+                                    la ciudad, habían reconstruido los conventos de San Francisco y Santo Domingo,
+                                    además de los Fuertes de Quinchamalí y Ñuble, a ello se agregó la construcción de un
+                                    castillo con dos torreones en el lado surponiente. A esta ciudad se la bautizó
+                                    como Santo Ángel de la Guarda, en gratitud al gobernador que refundó el pueblo,
+                                    el día 1 de enero de 1664, el mismo gobernador también le apodaría como "Llave del
+                                    Reino", también se instauran a la Virgen del Rosario y el Ángel de la Guarda
+                                    como patrones de la ciudad.​ No sería hasta 1671 cuando se instalaría la primera
+                                    industria en el rubro de curtiduría por Luis Lara.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Tercera fundación</h5>
+                                <p class="fw-bold">1700</p>
+                                <p class="fst-italic">Si bien el 23 de septiembre de 1700 el Colegio de Naturales ya
+                                    comenzaba a funcionar, en 1714 se iniciaron las obras gruesas en el sector de Alto
+                                    de la Horca, fuera del área cubierta por el Fuerte, hasta que en 1723 fue trasladado
+                                    a Santiago debido a una Rebelión mapuche, que si bien no afectó la ciudad, se
+                                    prefirió prevenir ante la posibilidad del hecho.
+                                </p>
+                                <p class="fst-italic">
+                                    En 1735 el gobernador Manuel de Salamanca hizo la observación de que todos los años
+                                    en la ciudad, el Río Chillán desbordaba su cauce, ingresando a la ciudad, sin
+                                    respetar los tajamares construidos, se acordó un 29 de mayo del mismo año de crear
+                                    un segundo cauce que serviría como desagüe, se ignora si ese cauce fue construido o
+                                    no, pero lo que sí se conoce es que en 1748 se produce un desborde del río que deja
+                                    a la ciudad en una ruina parcial​ y para empeorar la situación, la madrugada del
+                                    25 de mayo de 1751 surge un terremoto con epicentro en Concepción, cuyas ondas
+                                    sísmicas ocasionaron que el Río Chillán fuera vaciado sobre la ciudad, obligando a
+                                    sus habitantes a establecerse en el sector "Alto de la Horca", correspondiente al
+                                    emplazamiento que tiene la actual Chillán Viejo. Los días posteriores al sismo
+                                    fueron de reconocimiento del terreno y de fallecidos, entre estos se encontraba el
+                                    mismo alcalde de la ciudad, y peticiones a la Virgen del Rosario a que cesaran los
+                                    movimientos telúricos, donde incluso se sumaban a las súplicas los indígenas de
+                                    Huambalí.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Guerra por la independencia</h5>
+                                <p class="fw-bold">1800</p>
+                                <p class="fst-italic">En 1813, durante la Patria Vieja surgen batallas en contexto de la
+                                    Guerra de la Independencia de Chile, en la provincia la primera es ocurrida en el
+                                    mes de mayo en San Carlos, mientras que entre julio y agosto la ciudad de Chillán es
+                                    sitiada. El desarrollo de este acontecimiento si bien se estaba gestando en 27 de
+                                    julio, para el día 3 de agosto surge la primera batalla,​ cual es llamada el
+                                    Combate de Maipón y es ganada por el bando realista, más tarde en día 5 de agosto
+                                    surge una nueva batalla en el mismo lugar cual también es perdida por los patriotas.
+                                    Las consecuencias para Chillán fueron asesinatos y detenciones, entre estas,
+                                    la detención de Rosauro Acuña quien es levado a Callao y luego a Juan Fernández
+                                    hasta su muerte. Dentro de la actual Región de Ñuble surgirían nuevos
+                                    enfrentamientos como el 17 de agosto en la Combate de Quirihue y en el mes de
+                                    octubre, la Batalla de El Roble, en el actual límite de las comunas de Bulnes y
+                                    Quillón. En 1832 nace Pedro Lagos Marchant.
+                                </p>
+                                <p class="fst-italic">
+                                    En 1848 se crea la Provincia de Ñuble con Chillán como capital. Para 1850 la
+                                    ciudad contaba con 7000 habitantes. El invierno de aquel año tuvo una
+                                    inundación que obligó a crear canales subterráneos como los encontrados en 2011 en
+                                    Avenida O'Higgins.​ En el contexto de la Revolución de 1851, surge el Combate en
+                                    el sector de Monte de Urra.​ El intendente José Rondizzoni crea el "Registro de
+                                    Albañiles y Artesanos", antecesora de la "Sociedad de Artesanos La Unión", para 1853
+                                    es creado el Liceo de Hombres de Chillán, primero en emplear la enseñanza secundaria
+                                    en la ciudad. El año 1856 fue creada la primera Biblioteca Pública de Chillán,
+                                    cuyo primer director fue Pelegrín Martín y Martí, sería antecesora de la Biblioteca
+                                    Municipal de Chillán, ese mismo año el sector de Las Cuatro Avenidas pasaría
+                                    por un proceso de nivelación de sus calles.​ Al año siguiente es creada la
+                                    Dirección de Obras Públicas Municipales cual primera labor fue colocar alumbrado
+                                    público en la Plaza de armas de Chillán. En 1857 se crea el Club Alemán de
+                                    Chillán y el primer periódico de la ciudad, por Gonzalo Gazmuri, cual fue
+                                    llamado "El Ñuble".​ Posteriormente, al año siguiente, la Recova del Mercado de
+                                    Chillán es trasladada a la Plaza La Merced,​ mientras que en 1859 es inaugurado
+                                    el Colegio de la Purísima.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Terremoto de Chillán</h5>
+                                <p class="fw-bold">1900</p>
+                                <p class="fst-italic">El 24 de enero de 1939 la ciudad sufrió nuevamente los efectos de
+                                    un devastador terremoto, que destruyó casi completamente la ciudad, salvando unos
+                                    pocos edificios. Según las cifras oficiales de la época la cantidad de habitantes de
+                                    la ciudad era de 42.815 habitantes y la cantidad de fallecidos según el registro
+                                    civil indicaba 2.717 fallecidos, el diario El Mercurio de Santiago indicaba por su
+                                    parte 15 000 víctimas y la gente de la época mencionaba alrededor de 20.000,
+                                    pero según la Dirección de Obras Públicas el 95% de la ciudad fue destruida.
+
+                                    Tras el lamentable suceso, a los dos días del acontecimiento, el presidente Pedro
+                                    Aguirre Cerda viajó a la ciudad para observar los daños, tras una reunión en el
+                                    Centro Español de la ciudad, el presidente inició una campaña de limpieza de la
+                                    ciudad, cual abarcó de medidas sanitarias, alimentación, vestuario, techo,
+                                    transporte, refugios de damnificados y el reabastecimiento de luz eléctrica,
+                                    iniciando por la Plaza de armas de Chillán, el Hospital San Juan de Dios y la
+                                    Estación Chillán, el gobierno aprobó además la ley que creó la Corporación de
+                                    Reconstrucción y Auxilio y la Corporación de Fomento y Producción, ambas a beneficio
+                                    de los afectados en el terremoto.
+                                </p>
+                                <p class="fst-italic">
+                                    Durante esta década es creado el sector de Los Volcanes, naciente del loteo de las
+                                    tierras denominadas "Santa Blanca". En 1995 es creada la comuna de Chillán
+                                    Viejo por segunda vez.
+
+                                    En 1996 se construyó el Mall Plaza El Roble por la familia Rabié, lo cual ocasionó
+                                    que muchas tiendas nacidas en la ciudad cerraran por estar en desventaja ante la
+                                    competencia.​ Para el año siguiente es creado el "Comité Pro Ñuble Región" en un
+                                    cabildo abierto con el fin de iniciar el proyecto que llevaría a la entonces,
+                                    Provincia de Ñuble, a convertirse en una región, a aquel cabildo abierto asistieron
+                                    personalidades empresariales locales, académicos y políticos como Isidoro Tohá,
+                                    Rosauro Martínez, Aldo Bernucci y Mario Ríos Santander.
+                                </p>
+                            </li>
+                            <li>
+                                <h5 class="text-uppercase fw-bold">Terremoto de 2010</h5>
+                                <p class="fw-bold">2000</p>
+                                <p class="fst-italic">Tras el terremoto del 27 de febrero, la ciudad de Chillán queda
+                                    parcialmente destruida, permitiendo que los 400 reos de la cárcel de Chillán se
+                                    fugaran y dejando 4 prisioneros muertos por intentar escapar, diversas
+                                    casas de adobe se destruyeron, los barrios residenciales de la ciudad quedan
+                                    incomunicados del centro de la ciudad y el Estadio Nelson Oyarzún se destruye en su
+                                    techo de la zona oeste,​ el Hospital Clínico Herminda Martin queda con un 50%
+                                    de daños.​ En Avenida Brasil colapsaron silos de trigo, elemento que quedó
+                                    esparcido en medio de la arteria vial y la vía férrera. La catedral
+                                    quedó con grietas y sin sus famosos ventanales, mientras que la estatua de Bernardo
+                                    O'Higgins de la Plaza de Armas quedó degollada.​ Los Murales de Siqueiros y
+                                    Guerrero quedaron con graves grietas profundas.
+                                </p>
+                                <p class="fst-italic">
+                                    El proceso de reconstrucción de unos edificios y demolición de otros es un proceso
+                                    que aún se vive actualmente. La reconstrucción de la Estación Chillán no fue posible
+                                    hasta un año después ocurrido el hecho fatídico,​ mientras otras obras como la
+                                    demolición del Edificio Los Héroes recién inició en mayo del 2017.​ El 30 de
+                                    septiembre del mismo año es inaugurado el Parque Marta Colvin en la Avenida Ecuador
+                                    con motivo del Bicentenario de Chile. Un año después de ocurrido el sismo, la
+                                    Cárcel de Chillán es reconstruida como también el edificio de la Distribuidora Rabié
+                                    en Chillán Viejo y el puente de Nebuco, además es reparada la Catedral de Chillán y
+                                    los Murales de Siqueiros y Guerrero. Meses después, es demolida la torre de la
+                                    estación de ferrocarriles de Chillán, lo cual ocasionó la oposición de algunos
+                                    arquitectos por considerar que la reparación de la torre no requería tal
+                                    procedimiento​ que además carecía de permisos municipales. La situación
+                                    de la torre no se normalizó hasta agosto del 2011.
+                                </p>
+                                <p class="fst-italic">
+                                    En el verano de 2017 surge una Ola de calor en la zona central de Chile afectando a
+                                    Ñuble, donde el nivel extremo del país se lo adjudicó Quillón con 44,9 °C,
+                                    mientras en Quinchamalí se registró una temperatura de 42,8 °C y en la ciudad
+                                    de Chillán.41,4 °C. Tras esto se ocasionarían una serie de Incendios
+                                    forestales que afectaron diversos pueblos en el país, en Chillán afectó en los
+                                    sectores de Camino a Huape, Doña Francisca y Rucapequén,​ a ello
+                                    cabe agregar que los niveles de contaminación superaban la norma establecida.
+                                    Solo en Ñuble, los incendios no serían controlados hasta el 8 de febrero,
+                                    afectando más de 27 000 hectáreas.
+
+                                    Durante lo que quedaba de año, en la conmemoración del séptimo año después del
+                                    Terremoto de Chile de 2010, se deja constancia de que solo faltaba una vivienda para
+                                    reconstruir, aun así quedaban pendientes las reconstrucciones del Edificio Los
+                                    Héroes, los liceos del Grupo Escolar, el Liceo Industrial y el Edificio La
+                                    Frontera,​ solo el Edificio Los Héroes y el Liceo Industrial tendrían solución
+                                    durante el año, el primero empezaría a ser demolido en mayo y el segundo se
+                                    aprobarían los recursos de reconstrucción en abril.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Fin Historia -->
+        <!-- Noticias -->
+        <article data-aos="zoom-in" data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000" id="section-news">
+            <h2 class="text-uppercase fw-bold text-center">Noticias</h2>
+            <hr class="title-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card bg-dark text-white fw-bold border-0">
+                            <img src="https://www.chillanonline.cl/V5/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-26-at-12.04.31-PM.jpeg"
+                                height="400px" width="auto" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-6 col-lg-6 p-1">
+                                <div class="card bg-dark text-dark border-0">
+                                    <img src="https://www.chillanonline.cl/V5/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-26-at-12.04.31-PM.jpeg"
+                                        height="200px" width="auto" alt="...">
+                                    <div class="card-img-overlay">
+                                        <div class="text-news">
+                                            <h5 class="card-title text-white text-center p-2">Región de Ñuble se alista
+                                                para vivir el Día de los
+                                                Patrimonios</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 p-1">
+                                <div class="card bg-dark text-dark border-0">
+                                    <img src="https://www.chillanonline.cl/V5/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-26-at-10.10.37-AM-356x364.jpeg"
+                                        height="200px" width="auto" alt="...">
+                                    <div class="card-img-overlay">
+                                        <div class="text-news">
+                                            <h5 class="card-title text-white text-center p-2">Autoridades de Ñuble
+                                                destacan rebaja en el precio de las parafinas</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 p-1">
+                                <div class="card bg-dark text-dark border-0">
+                                    <img src="https://www.chillanonline.cl/V5/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-26-at-10.13.32-AM.jpeg"
+                                        height="200px" width="auto" alt="...">
+                                    <div class="card-img-overlay">
+                                        <div class="text-news">
+                                            <h5 class="card-title text-white text-center p-2">Semana internacional de
+                                                Turismo Social: Vacaciones Tercera Edad
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-6 p-1">
+                                <div class="card bg-dark text-dark border-0">
+                                    <img src="https://www.chillanonline.cl/V5/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-24-at-3.34.57-PM.jpeg"
+                                        height="200px" width="auto" alt="...">
+                                    <div class="card-img-overlay">
+                                        <div class="text-news">
+                                            <h5 class="card-title text-white text-center p-2">El Carmen encanta con su
+                                                quinta versión de la Fiesta de la Castaña</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 py-3">
+                        <div class="d-flex justify-content-center">
+                            <a href="news.html" target="_blank" class="btn btn-primary shadow p-3">Ver más noticias</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Fin Noticias -->
+        <!-- Contacto -->
+        <article data-aos="zoom-in-right" data-aos-easing="ease-out-cubic"
+        data-aos-duration="4000" id="section-contact">
+            <div class="container p-5 mt-5">
+                <h3 class="text-uppercase fw-bold text-center p-2">Contacto</h3>
+                <hr class="title-line">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 col-lg-6 my-3">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-body">
+                                <i class="bi bi-telephone-fill text-dark icon-contact"></i>
+                                <h5 class="card-title fw-bold">Télefonos</h5>
+                                <p class="card-text text-muted m-0 fst-italic">+569 80982182</p>
+                                <p class="card-text text-muted m-0 fst-italic">+569 80752790</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-6 my-3">
+                        <div class="card text-center shadow h-100">
+                            <div class="card-body">
+                                <i class="bi bi-envelope-fill text-dark icon-contact"></i>
+                                <h5 class="card-title fw-bold">Correo</h5>
+                                <a href="mailto:contactolaspromesas@fc.com"
+                                    class="card-text text-muted text-decoration-none">contacto@chillanturismo.cl</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102482.49878013416!2d-72.17375180184733!3d-36.61246935611096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9668d7c2b6f00259%3A0x14fe84c4f1092ea8!2zQ2hpbGxhbiwgQ2hpbGzDoW4sIMORdWJsZQ!5e0!3m2!1ses-419!2scl!4v1653669320727!5m2!1ses-419!2scl"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-light mb-3 shadow">
+                            <div class="card-header bg-primary text-white text-uppercase text-center fw-bold">Formulario
+                                de
+                                contacto</div>
+                            <div class="card-body">
+                                <form action="" method="get">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6">
+                                            <label for="exampleInputName" class="form-label text-dark fw-bold">Nombre
+                                                completo</label>
+                                            <input type="text" class="form-control" placeholder="Nombre completo"
+                                                aria-label="Nombre completo" required>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <label for="exampleInputEmail" class="form-label text-dark fw-bold">Correo
+                                                electrónico</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail"
+                                                aria-describedby="emailHelp" placeholder="ejemplo@gmail.com" required>
+                                            <div id="emailHelp" class="form-text text-info fw-bold">Nunca compartiremos
+                                                esta
+                                                información.</div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="exampleInputSubject"
+                                                class="form-label text-dark fw-bold">Asunto</label>
+                                            <select name="asunto" class="form-select"
+                                                aria-label="Default select example" required>
+                                                <option selected disabled value="">Seleccione una opción</option>
+                                                <option value="consultas">Consulta</option>
+                                                <option value="turismo">Turismo</option>
+                                                <option value="noticias">Noticias</option>
+                                                <option value="historia">Historia</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 mt-4">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Ingresa tus consultas"
+                                                    id="floatingTextarea" style="height: 100px" required></textarea>
+                                                <label for="floatingTextarea"
+                                                    class="fw-bold text-dark">Consultas</label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center p-2">
+                                            <button
+                                                class="btn bg-grad btn-send fw-bold text-uppercase text-white">Enviar
+                                                consulta</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Fin Contacto -->
+    </section>
+    <!-- Footer -->
+    <footer class="py-3 bg-grad">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link fw-bold text-white px-2"><i
+                        class="bi bi-house"></i> Inicio</a></li>
+            <li class="nav-item"><a href="#section-history" class="nav-link fw-bold text-white px-2"><i
+                        class="bi bi-clock-history"></i> Historia</a></li>
+            <li class="nav-item"><a href="#section-news" class="nav-link fw-bold text-white px-2"><i
+                        class="bi bi-newspaper"></i> Noticias</a></li>
+            <li class="nav-item"><a href="#section-contact" class="nav-link fw-bold text-white px-2"><i
+                        class="bi bi-telephone"></i> Contacto</a></li>
+        </ul>
+        <p class="text-center text-white">&copy; 2022 David Alejandro Navarrete Troncoso</p>
+    </footer>
+    <!-- Fin Footer -->
+    <!-- Fin seccion principal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
