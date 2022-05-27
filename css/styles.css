@@ -114,6 +114,23 @@ ul.timeline>li:before {
     margin: 0;
     top: 80px;
 }
+.text-news h5{
+    font-size: 16px;
+}
+@media (max-width: 767.98px) {
+    .text-news{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.767);
+        height: 90px;
+        width: 100%;
+        margin: 0;
+        top: 110px;
+    }
+    .text-news h5{
+        font-size: 11px;
+    }
+}
+
 .news-card:hover{
     transform: scale(1.1);
     transition: .3s;
